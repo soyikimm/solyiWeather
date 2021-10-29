@@ -4,9 +4,10 @@ import { StyleSheet, Text, View } from 'react-native';
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text style={styles.text}>TEST APP♥</Text>
-      <StatusBar style="auto" />
+    <View style={{flex:1, flexDirection:"row"}}>
+      <View style={{ flex: 1, backgroundColor:"tomato"}}></View>
+      <View style={{ flex: 5, backgroundColor:"teal"}}></View>
+      <View style={{ flex: 1, backgroundColor:"orange"}}></View>
     </View>
   );
 }
@@ -23,4 +24,3 @@ const styles = StyleSheet.create({ //자동완성 기능이있어 편리함
     color: "blue",
   },
 });
- 
